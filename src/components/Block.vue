@@ -13,7 +13,7 @@ export default {
             reactionTimer: 0
         }
     },
-    mounted() { // mount hook
+    mounted() { // mount hook // on load the component
         console.log(`component mounted`)
         setTimeout(() => {
             this.showBlock = true
@@ -21,10 +21,10 @@ export default {
             console.log(`delay: ${this.delay}`)
         }, this.delay);
     },
-    updated() { // updated hook
+    updated() { // updated hook // on update the component
         console.log(`component updated`)
     },
-    unmounted() { // unmounted hook
+    unmounted() { // unmounted hook // on kill the component
         console.log(`component unmounted`)
     },
     methods: {
